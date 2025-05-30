@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Paradise - Shop & Sales</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- AOS Animation CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --yellow: #f0de7b;
+      --grey: #808080;
+      --light-grey: #F5F5F5;
+
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-grey);
+      color: var(--grey);
+    }
+
+    .hero {
+      background: var(--yellow);
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .btn-shop {
+      background: var(--grey);
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-shop:hover {
+      background: #333;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .product-card .card-body {
+      padding: 15px;
+    }
+
+    footer {
+      background: var(--grey);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 50px;
+    }
+    /* Navbar Hover Effects */
+        .navbar-nav .nav-link {
+            position: relative;
+            margin: 0 15px;
+            transition: all 0.3s;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--yellow);
+            transition: width 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--yellow) !important;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+  </style>
+</head>
+<body>
+
+
+
+  <!-- navbar  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fas fa-home me-2 text-yellow"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cats.html">
+                        <i class="fas fa-cat me-2 text-yellow"></i>Cats
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Dogs.html">
+                        <i class="fas fa-dog me-2 text-yellow"></i>Dogs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">
+                        <i class="fas fa-shopping-cart me-2 text-yellow"></i>Shop
+                    </a>
+                </li>
+                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">
+                        <i class="fas fa-shopping-cart me-2 text-yellow"></i>Contact 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-down">
+    <h1>Welcome to Pet Paradise</h1>
+    <p>Your one-stop shop for happy paws and wagging tails!</p>
+    <button class="btn-shop mt-3">Shop Now</button>
+  </section>
+
+  <!-- Featured Pets / Products Section -->
+  <section class="container my-5">
+    <div class="section-title" data-aos="fade-up">Featured Pets</div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="product-card">
+          <img src="cute dog 111.jpg" alt="Puppy">
+          <div class="card-body">
+            <h5>Cute Puppy</h5>
+            <p>$149 - Healthy & Playful</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="product-card">
+          <img src="catas 2222.jpg" alt="Kitten">
+          <div class="card-body">
+            <h5>Adorable Kitten</h5>
+            <p>$129 - Vaccinated & Loving</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="product-card">
+          <img src="cats and dog 33.jpg" alt="Bear">
+          <div class="card-body">
+            <h5>Exotic Hamster</h5>
+            <p>$89 - Cage & Food Included</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sales / Discount Section -->
+  <section class="container my-5">
+    <div class="section-title" data-aos="fade-up">Sales & Deals</div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="flip-left">
+        <div class="product-card">
+          <img src="cafe cats.jpg" alt="Sale">
+          <div class="card-body">
+            <h5>50% off on all Cat Toys!</h5>
+            <p>Limited time only. Hurry up!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="flip-right">
+        <div class="product-card">
+          <img src="girl-5623231_1280.jpg" alt="Sale" >
+          <div class="card-body">
+            <h5>Free treats with every dog adoption</h5>
+            <p>Plus, a free grooming session!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+<section class="container my-5">
+  <div class="section-title" data-aos="fade-up">Happy Customers</div>
+  <div class="row g-4">
+
+    <div class="col-md-6" data-aos="fade-right">
+      <div class="product-card p-3 text-center">
+        <img src="clients 1.jpg" alt="Customer Ayesha" style="width: 450px; height: 250px; object-fit: cover; margin-bottom: 15px;">
+        <p>"Got my puppy from Pet Paradise! He's the best thing ever. Great service."</p>
+        <strong>- Ayesha</strong>
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+      <div class="product-card p-3 text-center">
+        <img src="client 2.jpg" alt="Customer Zain" style="width: 450px; height: 250px; object-fit: cover; margin-bottom: 15px;">
+        <p>"I adopted a kitten last month. Very healthy and playful. Recommended!"</p>
+        <strong>- Zain</strong>
+      </div>
+    </div>
+     <div class="col-md-6" data-aos="fade-left">
+      <div class="product-card p-3 text-center">
+        <img src="client 3.jpg" alt="Customer Zain" style="width: 450px; height: 250px; object-fit: cover; margin-bottom: 15px;">
+        <p>"I adopted a kitten last month. Very healthy and playful. Recommended!"</p>
+        <strong>- Zain</strong>
+      </div>
+    </div>
+     <div class="col-md-6" data-aos="fade-left">
+      <div class="product-card p-3 text-center">
+        <img src="client 4.jpg" alt="Customer Zain" style="width: 450px; height: 250px; object-fit: cover; margin-bottom: 15px;">
+        <p>"I adopted a kitten last month. Very healthy and playful. Recommended!"</p>
+        <strong>- Zain</strong>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+ 
+<footer class="footer-section bg-dark pt-5">
+    <div class="container">
+        <div class="row g-5" data-aos="fade-up" data-aos-delay="200">
+            <!-- About Column -->
+            <div class="col-md-4">
+                <div class="footer-widget">
+                    <a class="navbar-brand" href="#">
+                        <i class="fas fa-paw fa-2x text-warning me-2"></i>
+                        <span class="text-white h3">Fluffy Paws</span>
+                    </a>
+                    <p class="text-light mt-3">Making pet adoption easy and joyful since 2015. Find your perfect furry companion with our help.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-light hover-grow me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-light hover-grow me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-light hover-grow me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-light hover-grow"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-2">
+                <div class="footer-widget">
+                    <h4    style="color: white;" class text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light hover-link">Adoption Process</a></li>
+                        <li class="mb-2"><a href="#" class="text-light hover-link">Available Pets</a></li>
+                        <li class="mb-2"><a href="#" class="text-light hover-link">Success Stories</a></li>
+                        <li class="mb-2"><a href="#" class="text-light hover-link">Volunteer</a></li>
+                        <li><a href="#" class="text-light hover-link">Donate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h4 class="text-white mb-4">Contact Us</h4>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-warning me-2"></i>
+                            123 Pet Street, Animal City
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-warning me-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope text-warning me-2"></i>
+                            hello@fluffypaws.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pet Care Tips -->
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h4 class="text-white mb-4">Pet Care Tips</h4>
+                    <div class="position-relative">
+                        <img src="tips.jpg" alt="Happy Dog" class="img-fluid rounded-3 mb-3">
+                        <div class="newsletter-form">
+                            <input type="email" class="form-control mb-2" placeholder="Enter your email">
+                            <button class="btn btn-warning w-100 hover-grow">
+                                <i class="fas fa-bell me-2"></i>Get Tips
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom border-top pt-4 mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2023 Fluffy Paws. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light hover-link me-3">Privacy Policy</a>
+                    <a href="#" class="text-light hover-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+.footer-section {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.hover-link {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    color: #ffc107 !important;
+    transform: translateX(5px);
+}
+
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107 !important;
+    transform: translateY(-3px);
+}
+
+.footer-widget h4 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-widget h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #ffc107;
+}
+
+.newsletter-form input {
+    border: 1px solid #ffc107;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-bottom {
+    border-color: rgba(255,255,255,0.1) !important;
+}
+</style>
+
+<!-- Required Libraries -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

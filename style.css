@@ -1,0 +1,508 @@
+  :root {
+            --yellow: #FFD700;
+            --grey: #808080;
+            --light-grey: #F5F5F5;
+        }
+
+        /* Navbar Hover Effects */
+        .navbar-nav .nav-link {
+            position: relative;
+            margin: 0 15px;
+            transition: all 0.3s;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--yellow);
+            transition: width 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--yellow) !important;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Section Images Styling */
+        .section-img {
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .section-img:hover {
+            transform: scale(1.03);
+        }
+
+        .feature-card {
+            border: 2px solid var(--yellow);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 10px 30px rgba(255,215,0,0.2);
+        }
+
+
+
+/* Hero section  */
+.hero-section {
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+}
+
+.gradient-overlay {
+    background: linear-gradient(to right, rgba(44, 62, 80, 0.9), rgba(52, 152, 219, 0.7));
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.pet-image-wrapper {
+    transition: transform 0.5s ease;
+    perspective: 1000px;
+}
+
+.hover-float:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+}
+
+.hero-bg img {
+    object-position: center 30%;
+}
+
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+/* section img  */
+.feature-card {
+    background: white;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.shadow-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 165, 0, 0.15) !important;
+    border-color: #ffb347;
+}
+
+.img-hover-wrapper {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.img-hover-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.img-hover-wrapper img {
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.text-orange-gradient {
+    background: linear-gradient(45deg, #ff6b6b, #ffb347);
+    
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-decoration {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #ffb347);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .hover-decoration {
+    transform: scaleX(1);
+}
+
+.py-7 {
+    padding: 6rem 0;
+}
+
+.mb-6 {
+    margin-bottom: 4rem;
+}
+
+
+
+
+/* adpotion section  */
+
+.pet-adoption-image {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.hover-tilt:hover {
+    transform: rotate(2deg) scale(1.02);
+}
+
+.image-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.step-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background: white;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-color: #4b9cdb;
+}
+
+.card-hover:hover .step-icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(0.95); }
+}
+
+.process-step {
+    cursor: pointer;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+}
+
+.border-white {
+    border-color: white !important;
+}
+
+
+
+
+
+/* cats */
+
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #ffc107, #fffde7);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.3), transparent);
+  animation: shapeSpin 10s linear infinite;
+  top: -25%;
+  left: -25%;
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #ffc107;
+  border: 2px solid #ffc107;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.cat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.cat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffc107;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 3px solid #ffc107;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+@keyframes shapeSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-nav .nav-link {
+            position: relative;
+            margin: 0 15px;
+            transition: all 0.3s;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--yellow);
+            transition: width 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--yellow) !important;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+        
+.footer-section {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.hover-link {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    color: #ffc107 !important;
+    transform: translateX(5px);
+}
+
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107 !important;
+    transform: translateY(-3px);
+}
+
+.footer-widget h4 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-widget h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #ffc107;
+}
+
+.newsletter-form input {
+    border: 1px solid #ffc107;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-bottom {
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+
+/* Dogs */
+
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #ffc107, #ffecb3);
+  height: 100vh;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 70%);
+  animation: rotateShape 25s linear infinite;
+  z-index: 0;
+}
+
+.hero-section .container {
+  z-index: 1;
+  position: relative;
+}
+
+/* Breed Section */
+.breed-section {
+  background-color: #444;
+}
+
+.breed-card {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.breed-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  border: 2px solid #ffc107;
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, #ffc107, #ffca28);
+}
+
+.section-heading {
+  border-bottom: 3px solid #ffc107;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+@keyframes rotateShape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-nav .nav-link {
+            position: relative;
+            margin: 0 15px;
+            transition: all 0.3s;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--yellow);
+            transition: width 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--yellow) !important;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+
+
+        /* shops */
+
+
+       

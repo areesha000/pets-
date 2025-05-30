@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+   
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fas fa-home me-2 text-yellow"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cats.html">
+                        <i class="fas fa-cat me-2 text-yellow"></i>Cats
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Dogs.html">
+                        <i class="fas fa-dog me-2 text-yellow"></i>Dogs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">
+                        <i class="fas fa-shopping-cart me-2 text-yellow"></i>Shop
+                    </a>
+                </li>
+                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">
+                        <i class="fas fa-shopping-cart me-2 text-yellow"></i>Contact 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+ 
+<section class="hero-section d-flex align-items-center justify-content-center text-center">
+  <!-- Pattern Background -->
+  <div class="hero-pattern" style="background-image: url('https://www.transparenttextures.com/patterns/clean-gray-paper.png')"></div>
+  
+  <!-- Main Content -->
+  <div class="container position-relative" data-aos="fade-up">
+    <h1 class="display-3 fw-bold text-dark mb-4">Welcome to Dog World</h1>
+    <p class="lead text-secondary mb-4 hero-subtitle">Find your loyal companion here</p>
+    
+    <!-- CTA Button -->
+    <a href="#!" class="btn btn-warning btn-lg cta-btn">
+      Explore Breeds 
+      <i class="fas fa-paw ms-2"></i>
+    </a>
+  </div>
+
+  <!-- Scrolling Dogs Animation -->
+  <div class="floating-dogs">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616430.png" alt="dog" class="floating-dog-1">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="dog" class="floating-dog-2">
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features py-5 bg-light-yellow">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Feature 1 -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="feature-card p-4 h-100 bg-white">
+          <div class="icon-box mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/194/194279.png" alt="dog" class="feature-icon">
+          </div>
+          <h3 class="text-dark">Premium Breeds</h3>
+          <p class="text-secondary">Discover exceptional breeds from around the world</p>
+        </div>
+      </div>
+      
+      <!-- Feature 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="feature-card p-4 h-100 bg-white">
+          <div class="icon-box mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="health" class="feature-icon">
+          </div>
+          <h3 class="text-dark">Health Guarantee</h3>
+          <p class="text-secondary">Comprehensive health checks for all puppies</p>
+        </div>
+      </div>
+      
+      <!-- Feature 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-card p-4 h-100 bg-white">
+          <div class="icon-box mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/2593/2593398.png" alt="adoption" class="feature-icon">
+          </div>
+          <h3 class="text-dark">Adoption Support</h3>
+          <p class="text-secondary">Full guidance through adoption process</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+:root {
+  --light-yellow: #fff9e6;
+  --warm-gray: #f5f3f0;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background: var(--light-yellow);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-size: 400px;
+}
+
+.features {
+  background: var(--warm-gray);
+}
+
+.cta-btn {
+  background: #ffc107;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: #2d2d2d;
+  font-weight: 600;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  background: #ffca28;
+}
+
+.feature-card {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+}
+
+.floating-dogs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.floating-dog-1 {
+  position: absolute;
+  width: 150px;
+  right: 5%;
+  top: 30%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-dog-2 {
+  position: absolute;
+  width: 120px;
+  left: 10%;
+  top: 60%;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0px); }
+}
+
+.bg-light-yellow {
+  background: var(--light-yellow);
+}
+
+.bg-white {
+  background: white;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+</style>
+  <!-- About Dogs Section -->
+  <section class="py-5 about-section bg-light" id="about">
+    <div class="container">
+      <div class="row align-items-center" data-aos="fade-right">
+        <div class="col-md-6">
+          <img src="sania.jpg" class="img-fluid rounded shadow" alt="Happy Dog">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2 class="text-dark">Why Dogs Are The Best</h2>
+          <p class="text-muted">Dogs are not just pets, they're family. Loyal, loving, and always ready to play. Whether you want a jogging buddy or a lap snuggler, there's a dog for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dog Breeds Section -->
+  <section class="py-5 breed-section text-white" id="breeds">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-heading">Popular Dog Breeds</h2>
+        <p class="text-light">Explore different breeds and find your perfect match.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left">
+          <div class="breed-card p-3 shadow">
+            <img src="sherbano.jpg" class="img-fluid rounded" alt="Labrador">
+            <h5 class="mt-3">Labrador Retriever</h5>
+            <p>Friendly, intelligent, and outgoing. Great with families!</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-up">
+          <div class="breed-card p-3 shadow">
+            <img src="dog dog.jpg" class="img-fluid rounded" alt="German Shepherd">
+            <h5 class="mt-3">German Shepherd</h5>
+            <p>Confident and courageous. Ideal for active lifestyles.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-right">
+          <div class="breed-card p-3 shadow">
+            <img src="photo-1560743641-3914f2c45636.jpg" class="img-fluid rounded" alt="Beagle">
+            <h5 class="mt-3">Beagle</h5>
+            <p>Playful and curious. Great for kids and small homes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+
+<!-- CTA Section with Enhanced Animations -->
+<section class="cta-section py-5 position-relative" 
+         data-aos="fade-up" 
+         data-aos-duration="800"
+         style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);">
+    
+    <!-- Animated Circles Background -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-25">
+        <div class="circle-animation"></div>
+    </div>
+
+    <div class="container position-relative">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="300">
+                <h2 class="text-white mb-4 display-4 fw-bold">
+                    Ready for Unconditional Love?
+                    <i class="fas fa-heart ms-2"></i>
+                </h2>
+                <p class="lead text-light mb-4 opacity-90">
+                    Discover your perfect companion from our loving rescue family
+                </p>
+                <a href="#contact" 
+                   class="cta-btn btn btn-light btn-lg px-5 py-3 rounded-pill fw-bold"
+                   data-aos="fade-up" 
+                   data-aos-delay="500">
+                   Begin Adoption Process 
+                   <i class="fas fa-paw ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.cta-section {
+    overflow: hidden;
+}
+
+.circle-animation {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 20%, transparent 60%);
+    animation: pulse 8s infinite linear;
+}
+
+@keyframes pulse {
+    0% { transform: translate(-25%, -25%) scale(1); }
+    50% { transform: translate(-25%, -25%) scale(1.2); }
+    100% { transform: translate(-25%, -25%) scale(1); }
+}
+
+.cta-btn {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.9);
+    color: #2c3e50 !important;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    background: white;
+    border-color: white;
+}
+
+.opacity-90 { opacity: 0.9; }
+</style>
+
+<!-- Required Dependencies -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000 });</script>
+
+
+  
+  <!-- Footer -->
+
+  <footer class="footer-section bg-dark pt-5">
+    <div class="container">
+        <div class="row g-5" data-aos="fade-up" data-aos-delay="200">
+            <!-- About Column -->
+            <div class="col-md-4">
+                <div class="footer-widget">
+                    <a class="navbar-brand" href="#">
+                        <i class="fas fa-paw fa-2x text-warning me-2"></i>
+                        <span class="text-white h3">Fluffy Paws</span>
+                    </a>
+                    <p class="text-light mt-3">Making pet adoption easy and joyful since 2015. Find your perfect furry companion with our help.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-light hover-grow me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-light hover-grow me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-light hover-grow me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-light hover-grow"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-2">
+                <div class="footer-widget">
+                    <h4    style="color: white;" class text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light hover-link">Adoption Process</a></li>
+                        <li class="mb-2"><a href="#" class="text-light hover-link">Available Pets</a></li>
+                        <li class="mb-2"><a href="#" class="text-light hover-link">Success Stories</a></li>
+                        <li class="mb-2"><a href="#" class="text-light hover-link">Volunteer</a></li>
+                        <li><a href="#" class="text-light hover-link">Donate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h4 class="text-white mb-4">Contact Us</h4>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-warning me-2"></i>
+                            123 Pet Street, Animal City
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-warning me-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope text-warning me-2"></i>
+                            hello@fluffypaws.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pet Care Tips -->
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h4 class="text-white mb-4">Pet Care Tips</h4>
+                    <div class="position-relative">
+                        <img src="tips.jpg" alt="Happy Dog" class="img-fluid rounded-3 mb-3">
+                        <div class="newsletter-form">
+                            <input type="email" class="form-control mb-2" placeholder="Enter your email">
+                            <button class="btn btn-warning w-100 hover-grow">
+                                <i class="fas fa-bell me-2"></i>Get Tips
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom border-top pt-4 mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2023 Fluffy Paws. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light hover-link me-3">Privacy Policy</a>
+                    <a href="#" class="text-light hover-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+.footer-section {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.hover-link {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    color: #ffc107 !important;
+    transform: translateX(5px);
+}
+
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107 !important;
+    transform: translateY(-3px);
+}
+
+.footer-widget h4 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-widget h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #ffc107;
+}
+
+.newsletter-form input {
+    border: 1px solid #ffc107;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-bottom {
+    border-color: rgba(255,255,255,0.1) !important;
+}
+</style>
+
+<!-- Required Libraries -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+ 
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
